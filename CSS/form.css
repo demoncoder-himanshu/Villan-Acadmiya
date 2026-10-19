@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================= BODY ================= */
+
+body {
+    background: #0a0a0a;
+    color: #fff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+
+/* ================= FORM ================= */
+
+form {
+    width: min(700px, 100%);
+
+    background: #111;
+
+    border: 1px solid #292929;
+    border-radius: 18px;
+
+    padding: 40px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, .6);
+
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+
+/* ================= INPUTS ================= */
+
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    background: #181818;
+    color: #fff;
+
+    border: 1px solid #333;
+    border-radius: 7px;
+
+    outline: none;
+
+    font-family: inherit;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus {
+    border-color: #777;
+}
+
+
+/* ================= LABELS ================= */
+
+form > label {
+    display: block;
+
+    color: #ddd;
+    font-size: 14px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #ddd;
+    font-size: 14px;
+}
+
+
+/* ================= FIELDSETS ================= */
+
+fieldset {
+    border: 1px solid #292929;
+    border-radius: 10px;
+
+    padding: 25px;
+
+    display: flex;
+
+    gap: 18px 25px;
+
+    flex-wrap: wrap;
+}
+
+legend {
+    color: #ddd;
+
+    padding: 0 10px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+fieldset label {
+    color: #aaa;
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    cursor: pointer;
+}
+
+fieldset input[type="radio"],
+fieldset input[type="checkbox"] {
+    accent-color: #fff;
+    cursor: pointer;
+}
+
+
+/* ================= REASON ================= */
+
+.reason-box {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.reason-box label {
+    color: #ddd;
+    font-size: 14px;
+}
+
+.reason-box textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    background: #181818;
+    color: #fff;
+
+    border: 1px solid #333;
+    border-radius: 7px;
+
+    outline: none;
+
+    font-family: inherit;
+
+    resize: vertical;
+}
+
+.reason-box textarea:focus {
+    border-color: #777;
+}
+
+
+/* ================= AGREEMENT ================= */
+
+.agreement {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.agreement > div {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 8px;
+}
+
+.agreement input {
+    margin-top: 3px;
+
+    accent-color: #fff;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+.agreement label {
+    color: #aaa;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    cursor: pointer;
+}
+
+
+/* ================= SUBMIT BUTTON ================= */
+
+form > button {
+    padding: 14px;
+
+    background: #fff;
+    color: #000;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: .2s ease;
+}
+
+form > button:hover {
+    background: #ddd;
+
+    transform: translateY(-2px);
+}
+
+form > button:active {
+    transform: translateY(0);
+}
+
+
+/* ================= FORM HEADER ================= */
+
+.form-header {
+    width: min(700px, 100%);
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.form-header h1 {
+    font-size: 36px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+.form-header p {
+    color: #888;
+
+    font-size: 14px;
+}
+
+
+/* ================= ORGANIZATION IMAGE ================= */
+
+#organization-logo img {
+    width: 260px;
+    height: 145px;
+
+    object-fit: cover;
+
+    border-radius: 4px;
+
+    border: 1px solid #444;
+
+    margin: 0 auto 25px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, .5);
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 25px 12px;
+    }
+
+
+    /* ---------- Header ---------- */
+
+    .form-header {
+        margin-bottom: 20px;
+    }
+
+    .form-header h1 {
+        font-size: 28px;
+
+        letter-spacing: 1.5px;
+    }
+
+    .form-header p {
+        font-size: 13px;
+
+        line-height: 1.6;
+    }
+
+
+    /* ---------- Organization Image ---------- */
+
+    #organization-logo img {
+        width: min(260px, 90vw);
+
+        height: auto;
+
+        aspect-ratio: 260 / 145;
+
+        margin-bottom: 20px;
+    }
+
+
+    /* ---------- Form ---------- */
+
+    form {
+        width: 100%;
+
+        padding: 25px 18px;
+
+        border-radius: 14px;
+
+        gap: 20px;
+    }
+
+
+    /* ---------- Fieldsets ---------- */
+
+    fieldset {
+        padding: 20px 15px;
+
+        gap: 15px 18px;
+    }
+
+    legend {
+        font-size: 13px;
+    }
+
+    fieldset label {
+        font-size: 13px;
+    }
+
+
+    /* ---------- Inputs ---------- */
+
+    form input[type="text"],
+    form input[type="number"] {
+        padding: 12px 13px;
+    }
+
+
+    /* ---------- Reason ---------- */
+
+    .reason-box textarea {
+        min-height: 130px;
+
+        padding: 12px 13px;
+    }
+
+
+    /* ---------- Agreement ---------- */
+
+    .agreement {
+        gap: 14px;
+    }
+
+    .agreement label {
+        font-size: 12px;
+
+        line-height: 1.6;
+    }
+
+
+    /* ---------- Submit ---------- */
+
+    form > button {
+        padding: 14px 12px;
+
+        font-size: 13px;
+    }
+}
+
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 400px) {
+
+    body {
+        padding: 20px 8px;
+    }
+
+    .form-header h1 {
+        font-size: 24px;
+    }
+
+    form {
+        padding: 22px 14px;
+    }
+
+    fieldset {
+        padding: 18px 12px;
+
+        gap: 13px 15px;
+    }
+
+    fieldset label {
+        font-size: 12px;
+    }
+
+    .agreement label {
+        font-size: 11px;
+    }
+}

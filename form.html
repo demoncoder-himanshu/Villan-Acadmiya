@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/form.css">
+    <title>Villan Acadmiya - Registration</title>
+</head>
+
+<body>
+    <div class="form-header">
+
+        <div id="organization-logo"></div>
+
+        <h1 id="organization-name">Villan Acadmiya</h1>
+
+        <p class="registration-title">
+            Official Registration Portal
+        </p>
+
+        <p id="organization-description">
+            Begin your journey and prove that you have what it takes to join the academy.
+        </p>
+
+    </div>
+
+    <form action="Submit">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter Your Real Name"
+                required
+            >
+        </div>
+        <div class="form-group">
+            <label for="alias">Alias</label>
+            <input
+                type="text"
+                id="alias"
+                name="alias"
+                placeholder="Known as"
+                required
+            >
+        </div>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input
+                type="number"
+                id="age"
+                name="age"
+                placeholder="Enter Your Age"
+                required
+            >
+        </div>
+
+        <fieldset>
+            <legend>Gender</legend>
+
+            <label>
+                <input type="radio" name="gender" value="Male" required>
+                Male
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="Female">
+                Female
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="Other">
+                Other
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Rank</legend>
+
+            <label>
+                <input type="radio" name="rank" value="E" required>
+                E-rank
+            </label>
+
+            <label>
+                <input type="radio" name="rank" value="D">
+                D-rank
+            </label>
+
+            <label>
+                <input type="radio" name="rank" value="C">
+                C-rank
+            </label>
+
+            <label>
+                <input type="radio" name="rank" value="B">
+                B-rank
+            </label>
+
+            <label>
+                <input type="radio" name="rank" value="A">
+                A-rank
+            </label>
+
+            <label>
+                <input type="radio" name="rank" value="S">
+                S-rank
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferred Training</legend>
+
+            <label for="combat">
+                <input type="checkbox" id="combat" name="training" value="Combat">
+                Combat
+            </label>
+
+            <label for="strategy">
+                <input type="checkbox" id="strategy" name="training" value="Strategy">
+                Strategy
+            </label>
+
+            <label for="intelligence">
+                <input type="checkbox" id="intelligence" name="training" value="Intelligence">
+                Intelligence
+            </label>
+
+            <label for="psychological-warfare">
+                <input
+                    type="checkbox"
+                    id="psychological-warfare"
+                    name="training"
+                    value="Psychological Warfare"
+                >
+                Psychological Warfare
+            </label>
+
+            <label for="destruction">
+                <input
+                    type="checkbox"
+                    id="destruction"
+                    name="training"
+                    value="Destruction"
+                >
+                Destruction
+            </label>
+
+        </fieldset>
+
+        <div class="reason-box">
+
+            <label for="reason">
+                Why do you want to join Villan Acadmiya?
+            </label>
+
+            <textarea
+                id="reason"
+                name="reason"
+                rows="6"
+                placeholder="Tell us why you deserve to become a villain..."
+                required
+            ></textarea>
+
+        </div>
+
+
+        <!-- Rules -->
+        <div class="agreement">
+
+            <div>
+                <input
+                    type="checkbox"
+                    id="rules"
+                    name="rules"
+                    value="rules"
+                    required
+                >
+
+                <label for="rules">
+                    I agree to the Villan Acadmiya rules.
+                </label>
+            </div>
+            <div>
+                <input
+                    type="checkbox"
+                    id="accept"
+                    name="accept"
+                    value="accept"
+                    required
+                >
+
+                <label for="accept">
+                    I accept that the academy is not responsible
+                    for any destruction caused during training.
+                </label>
+            </div>
+
+        </div>
+
+
+        <div>
+            <input
+                type="checkbox"
+                id="accept"
+                name="accept"
+                value="accept"
+                required
+            >
+
+            <label for="accept">
+                I accept that the academy is not responsible
+                for any destruction caused during training.
+            </label>
+        </div>
+
+
+        <button type="submit">
+            Join Villan Acadmiya
+        </button>
+
+    </form>
+
+    <script src="./Src/form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #0a0a0a;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.offer-letter {
+    width: min(750px, 100%);
+    background: #111;
+    border: 1px solid #292929;
+    border-radius: 12px;
+    padding: 50px;
+}
+
+.offer-header {
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #292929;
+}
+
+.offer-header p {
+    color: #888;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.offer-header h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.offer-content {
+    padding-top: 35px;
+}
+
+.offer-content > p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.candidate-details {
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px solid #292929;
+    border-radius: 8px;
+}
+
+.candidate-details p {
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.candidate-details p:last-child {
+    margin-bottom: 0;
+}
+
+.candidate-details strong {
+    color: #ddd;
+}
+
+.closing {
+    margin-top: 30px;
+}
